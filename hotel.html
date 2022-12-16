@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵物住宿</title>
+    <link rel="stylesheet" href="header.css">
+
+
+    <style>
+        .list {
+            width: 900px;
+            /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2); */
+            margin: auto;
+        }
+
+        .cards {
+            display: flex;
+
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 180px;
+            height: 220px;
+            text-align: center;
+            font-family: arial;
+            /* font-size: 16px; */
+            font-size: small;
+            position: relative;
+            margin: 10px;
+            right: 20px;
+            /* border-color: lightskyblue; */
+            border-style: groove;
+            padding: 5px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.175);
+            border-radius: 0.375rem;
+
+        }
+
+        .price {
+            color: rgba(255, 0, 0, 0.5);
+            font-size: 16px;
+            position: absolute;
+            bottom: 5px;
+            left: 15px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            background-color: transparent;
+            cursor: pointer;
+            width: 50px;
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            color: #A6372D;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+
+        body a:visited {
+            color: gray;
+        }
+
+        .carousel>.carousel-inner>.carousel-item>img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        .hot_text {
+            font-size: 30px;
+            text-align: center;
+            margin: 10px 0;
+            font-weight: bold;
+
+        }
+
+
+        .textname {
+            color: var(--thrcolor);
+            overflow: hidden;
+            /* white-space: nowrap; */
+            /* text-overflow: ellipsis; */
+            height: 30px;
+            line-height: 15px;
+            text-align: center;
+
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            background-color: transparent;
+            cursor: pointer;
+            width: 50px;
+            position: absolute;
+            bottom: 0;
+            right: 5px;
+            width: 80px;
+            bottom: 8px;
+            color: var(--thrcolor);
+        }
+
+        #qwert {
+            width: 180px;
+            height: 170px;
+            line-height: 170px;
+            text-align: center;
+            margin-bottom: 5px;
+
+        }
+
+        #qwert img {
+            vertical-align: middle;
+            max-height: 100%;
+        }
+
+        #allImg {
+            width: 70%;
+            max-height: 100%;
+            overflow: hidden;
+            /* text-align: center; */
+            display: block;
+            margin: auto;
+
+        }
+
+        #hotel_img {
+            width: 1000px;
+            height: 300px;
+            margin: auto;
+            /* background-color: lightcoral; */
+        }
+
+        /* 滑鼠移過商品圖片變大 */
+        #qwert img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+        }
+
+        #qwert img:hover {
+            transform: scale(1.2, 1.2);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo-centered">
+            <a href="./home.html" class="active"> <img src="img/LOGO.png" style="width: 120px;"> </a>
+        </div>
+
+        <!-- <a href="#news">News</a>
+        <a href="#contact">Contact</a>  -->
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+        <div class="header-right">
+            <a href="./car.html" target="_blank">購物車</a>
+            <a href="./login.html" target="_blank">登入|註冊</a>
+        </div>
+
+    </div>
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">貓狗飼料</a>
+        <a href="#">貓狗罐頭</a>
+        <a href="#">貓狗零食</a>
+        <a href="#">寵物保健</a>
+        <a href="#">貓砂系列</a>
+        <a href="#">居家用品</a>
+        <a href="#">抓板玩具</a>
+        <a href="#">美容護理</a>
+        <a href="#">環境清潔</a>
+        <a href="#">住宿推薦</a>
+    </div>
+
+    <script> /*MENU-JS*/
+        function openNav() {
+            document.getElementById("myMenu").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("myMenu").style.width = "0";
+        }
+    </script>
+
+    <!-- <div class="search">
+        <form>
+            <input type="text" placeholder="搜尋.." style="height: 43px;">
+            <button type="submit"><img src="icons/search.png" alt="Search" style="width: 25px; "></button>
+        </form>
+    </div> -->
+    <br>
+
+
+    <div id="hotel_img"><img id="allImg" src="img/simba.jpg"></div>
+    <div class="hot_text">推薦&nbsp;&nbsp;寵物住宿店家！</div>
+    <div class="list" style="text-align: center;">
+        <div>
+            <ul class="cards">
+                <li class="card">
+                    <div id="qwert">
+                        <a href="#"><img src="img/住宿_1.jpg" style="width: 180px;"></a>
+                    </div>
+                    <a href="#" class="textname">踏踏貓旅館．貓咪美容</a>
+                    <span class="price"> 臺中大雅</span>
+                    <button><a href="https://tatacathotel.com/" target="_blank">瞭解更多..</a> </button>
+                </li>
+                <li class="card">
+                    <div id="qwert">
+                        <a href="#"><img src="img/住宿_7.JPG" style="width: 180px;"></a>
+                    </div>
+                    <a href="#" class="textname">寵曖貓狗生活館</a> <br>
+                    <span class="price"> 臺中中區</span>
+                    <button><a href="https://zh-tw.facebook.com/chongaipetlifehouse" target="_blank">瞭解更多..</a>
+                    </button>
+                </li>
+                <li class="card">
+                    <div id="qwert">
+                        <a href="#"><img src="img/住宿_8.JPG" style="width: 180px; max-height: 100%; "></a>
+                    </div>
+                    <a href="#" class="textname">台中喵星人Villa貓住宿</a> <br>
+                    <span class="price"> 臺中西區</span>
+                    <button><a href="https://villa-cattery.business.site/" target="_blank">瞭解更多..</a> </button>
+                </li>
+                <li class="card">
+                    <div id="qwert">
+                        <a href="#"><img src="img/住宿_3.jpg" style="width: 180px;"></a>
+                    </div>
+                    <a href="#" class="textname">阿默寵物美容 </a> <br>
+                    <span class="price"> 新北三峽</span>
+                    <button><a href="http://www.amopetgrooming.com/" target="_blank">瞭解更多..</a> </button>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="list" style="text-align: center;">
+        <div>
+            <ul class="cards">
+                <li class="card">
+                    <div id="qwert">
+                        <a href="#"><img src="img/住宿_2.jpeg" style="width: 180px;"></a>
+                    </div>
+                    <a href="#" class="textname">毛小愛Fluv</a> <br>
+                    <span class="price"> 台北大安</span>
+                    <button><a href="https://fluv.com/tw" target="_blank">瞭解更多..</a> </button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/住宿_4.jpg" style="width: 180px;"></a>
+                    <a href="#" class="textname">GuGu House寵物旅館</a> <br>
+                    <span class="price"> 台北中山</span>
+                    <button><a href="https://www.guguhouse.com/" target="_blank">瞭解更多..</a> </button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/住宿_5.jpg" style="width: 180px;"></a>
+                    <a href="#" class="textname">狗狗家 Doghome</a> <br>
+                    <span class="price"> 台北大同</span>
+                    <button><a href="http://86.155.199.104.bc.googleusercontent.com/" target="_blank">瞭解更多..</a>
+                    </button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/住宿_6.JPG" style="width: 180px;"></a>
+                    <a href="#" class="textname">Very旺</a> <br>
+                    <span class="price"> 台北松山</span>
+                    <button><a href="http://verywant.com.tw/main.php" target="_blank">瞭解更多..</a> </button>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

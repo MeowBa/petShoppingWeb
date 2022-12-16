@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登入|註冊</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header.css">
+
+    <style>
+       
+        .login {
+            width: 300px;
+            height: 350px;
+            background-color: rgba(255, 243, 137, 0.5);
+            border-radius: 20px;
+            text-align: center;
+            margin: auto;
+            margin-top: 150px;
+
+        }
+
+        .Login_header {
+            font-size: 36px;
+            height: 60px;
+            background-color: var(--maincolor);
+            line-height: 60px;
+            border-radius: 20px 20px 0 0;
+
+        }
+
+        .loginbutton {
+            width: 300px;
+            height: 50px;
+            /* background-color: black; */
+            margin-top: 40px;
+
+
+        }
+
+        .loginbutton button {
+            background-color: white;
+            font-size: 20px;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            color: var(--thrcolor);
+            border: none;
+            border-radius: 5px;
+        }
+
+        .enter {
+            /* background-color: red; */
+            font-size: 20px;
+            height: 100px;
+            padding: 30px 50px;
+            text-align: left;
+
+        }
+
+        .enter input {
+            height: 20px;
+            width: 200px;
+        }
+
+        .loginbutton>button:hover{
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-centered">
+            <a href="./home.html" class="active"> <img src="./img/LOGO.png" style="width: 150px; ;"> </a>
+        </div>
+
+        <!-- <a href="#news">News</a>
+        <a href="#contact">Contact</a>  -->
+        <button class="openbtn" onclick="openNav()">&#9776; </button> 
+
+        <div class="header-right">
+            <a href="./car.html" target="_blank">購物車</a>
+            <a href="./login.html" target="_blank">登入|註冊</a>
+        </div>
+
+    </div>
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">貓狗飼料</a>
+        <a href="#">貓狗罐頭</a>
+        <a href="#">貓狗零食</a>
+        <a href="#">寵物保健</a>
+        <a href="#">貓砂系列</a>
+        <a href="#">居家用品</a>
+        <a href="#">抓板玩具</a>
+        <a href="#">美容護理</a>
+        <a href="#">環境清潔</a>
+        <a href="#">住宿推薦</a>
+    </div>
+
+    <script> /*MENU-JS*/
+        /* Set the width of the sidebar to 250px (show it) */
+        function openNav() {
+            document.getElementById("myMenu").style.width = "250px";
+        }
+
+        /* Set the width of the sidebar to 0 (hide it) */
+        function closeNav() {
+            document.getElementById("myMenu").style.width = "0";
+        }
+    </script>
+
+
+    <div class="login">
+        <div class="Login_header">L͛O͛G͛I͛N͛</div>
+        <div class="enter">
+            <div>帳號</div>
+            <input type="text" placeholder="請輸入帳號" required>
+            <div>密碼</div>
+            <input type="password" placeholder="請輸入密碼" required>
+        </div>
+
+        <div class="loginbutton">
+            <button>登入</button>
+            <button>註冊</button>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

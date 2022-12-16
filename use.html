@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寵物用品</title>
+    <link rel="stylesheet" href="../_css/bootstrap.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="商品列表.css">
+    <script src="../_js/bootstrap.bundle.js"></script>
+
+    <style>
+        .carousel>.carousel-inner>.carousel-item>img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .container {
+            margin: auto;
+        }
+
+        .hot_text {
+            width: 1180px;
+            font-size: 30px;
+            text-align: center;
+            /* margin: 10px 0; */
+            margin: auto;
+            background-color: rgba(255, 243, 137, 0.5);
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+            /* border-top: 2px solid #1C6EA4;
+            border-bottom: 2px solid #1C6EA4; */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        #allImg {
+            width: 80%;
+            display: block;
+            margin: auto;
+        }
+
+        .textname {
+            color: var(--thrcolor);
+            overflow: hidden;
+            /* white-space: nowrap;
+            text-overflow: ellipsis; */
+            height: 30px;
+            line-height: 15px;
+            text-align: center;
+        }
+
+        #qwert {
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+
+        }
+
+        /* 滑鼠移過商品圖片變大 */
+        #qwert img {
+            transform: scale(1, 1);
+            transition: all 1s ease-out;
+        }
+
+        #qwert img:hover {
+            transform: scale(1.2, 1.2);
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="logo-centered">
+            <a href="./home.html" class="active"> <img src="img/LOGO.png" style="width: 120px;"> </a>
+        </div>
+
+        <!-- <a href="#news">News</a>
+        <a href="#contact">Contact</a>  -->
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+
+        <div class="header-right">
+            <a href="./car.html" target="_blank">購物車</a>
+            <a href="./login.html" target="_blank">登入|註冊</a>
+        </div>
+
+    </div>
+
+    <div id="myMenu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">貓狗飼料</a>
+        <a href="#">貓狗罐頭</a>
+        <a href="#">貓狗零食</a>
+        <a href="#">寵物保健</a>
+        <a href="#">貓砂系列</a>
+        <a href="#">居家用品</a>
+        <a href="#">抓板玩具</a>
+        <a href="#">美容護理</a>
+        <a href="#">環境清潔</a>
+        <a href="#">住宿推薦</a>
+    </div>
+
+    <script> /*MENU-JS*/
+        function openNav() {
+            document.getElementById("myMenu").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("myMenu").style.width = "0";
+        }
+    </script>
+
+    <div class="search">
+        <form>
+            <input type="text" placeholder="搜尋.." style="height: 43px;">
+            <button type="submit"><img src="icons/search.png" alt="Search" style="width: 25px; "></button>
+        </form>
+    </div>
+    <br>
+
+    <!-- 這裡是輪播廣告圖 -->
+    <div class="container">
+        <div id="apple" data-bs-interval="2000" data-bs-ride="carousel" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#apple" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#apple" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#apple" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/adv_10.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/adv_11.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/adv_12.jpg" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#apple" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#apple" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </div>
+
+    <div class="hot_text">毛孩的玩樂天堂！一生必備的貓抓板、汪汪陪伴玩具！</div>
+    <!-- <img id="allImg" src="img/原點.jpg"> -->
+    <!-- 商品列表 -->
+    <div class="list" style="text-align: center;">
+        <!-- <span>商品列表</span> -->
+        <div>
+            <ul class="cards">
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_4.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">渦流循環寵物活水機1.5L(綠) W2-N</a> <br>
+                    <span class="price"> $990</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_5.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">甜甜圈六餐餵食器 (粉)(環保版) F6-TW</a> <br>
+                    <span class="price"> $990</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_7.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">小雞陶瓷食盆 平口(15x10公分)</a> <br>
+                    <span class="price"> $490</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_1.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">銀河雙開貓砂盆 紳士灰 (55*44.5*40公分)</a> <br>
+                    <span class="price"> $899</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_8.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">啤酒杯寵物涼墊 (64x51x6公分) (夏天貓狗寵物降溫涼感涼墊睡墊)</a> <br>
+                    <span class="price"> $490</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- <div class="hot_text">熱銷品牌</div> -->
+    <!-- <img id="allImg" src="img/adv_15.jpg"> -->
+    <div class="list" style="text-align: center;">
+        <!-- <span>商品列表</span> -->
+        <div>
+            <ul class="cards">
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_2.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">99.99%無粉塵 !! 極致無塵砂 5公斤</a> <br>
+                    <span class="price"> $1,150</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_3.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">益生菌礦型豆腐砂6L(1入)</a> <br>
+                    <span class="price"> $280</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_9.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">結塊貓砂 (藍標 雙重活性碳低過敏)25磅(2入)</a> <br>
+                    <span class="price"> $1,494</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_10.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">天然木屑砂10L(3入)</a> <br>
+                    <span class="price"> $597</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_11.png" style="width: 120px;"></a>
+                    <a href="#" class="textname">Scoop Macro 貓砂鏟(大孔)</a> <br>
+                    <span class="price">$99</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+    <!-- <div class="hot_text">其他推薦商品</div> -->
+    <img id="allImg" src="img/adv_15.jpg">
+    <div class="list" style="text-align: center;">
+        <!-- <span>商品列表</span> -->
+        <div>
+            <ul class="cards">
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_6.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">高質感可折疊雙肩寵物包【淺灰色】(40* 26* 33cm)(寵物外出包) </a> <br>
+                    <span class="price"> $1,090</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_12.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">可折疊拉桿外出包 卡其色(32x26x49公分)(寵物外出包)</a> <br>
+                    <span class="price"> $1,490</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_13.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">貓用牽引繩 野獸色塊(彩) 組合款</a> <br>
+                    <span class="price"> $290</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_14.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">Explore│外出包【紅M】(44*21*28公分)(寵物外出包)</a> <br>
+                    <span class="price"> $2,412</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+                <li class="card">
+                    <a href="#" id="qwert"><img src="img/用品_15.jpg" style="width: 120px;"></a>
+                    <a href="#" class="textname">simplicity輕量推車 黑(54x28x55公分)(寵物外出包)</a> <br>
+                    <span class="price"> $3,200</span>
+                    <button><img src="icons/shopping.png" style="width: 30px;"></button>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

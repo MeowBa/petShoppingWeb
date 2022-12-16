@@ -1,0 +1,43 @@
+<img src="icons位置" alt="新品到貨" style="width:108px;height:108px"/><p>新品到貨</p>
+
+-----
+
+/* 當 radio 點選的時候， img 要發生變化 => 看 radio 點的是哪一顆 */
+        #blur:checked~img{filter:blur(5px) ;}
+25-21練習參考
+
+-----
+
+https://www.niusnews.com/=P3pj1jkj4
+寵物美容參考來源
+
+-----
+
+https://kikinote.net/155638
+寵物住宿參考來源
+https://www.pets-well.com/%E5%85%A8%E5%8F%B0%E6%9C%80%E4%BD%B3%E5%AF%B5%E7%89%A9%E6%97%85%E9%A4%A8%E4%BD%8F%E5%AE%BF%E6%8E%A8%E8%96%A6%E5%8F%8A%E8%A9%95%E5%83%B9%E9%81%B8%E6%93%87%E6%96%B9%E6%B3%95/13418/
+
+-----
+
+https://www.petstimes.com.tw/?gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITU-8SmZ30S8h2YWxoE1ueXC90rQh62QpSk09GL1y0WpVucM5XRD32QaAma3EALw_wcB
+寵物保健參考來源
+
+-----
+
+狗飼料參考來源
+https://www.niusnews.com/=P0hhaoh38
+
+-----
+
+貓飼料參考來源
+https://www.niusnews.com/=P088th3g1
+
+-----
+
+狗零食參考
+https://my-best.tw/46819
+
+-----
+
+貓零食參考
+https://my-best.tw/116693
