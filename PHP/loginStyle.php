@@ -8,20 +8,14 @@ $thr_color = "#4D5D73";
 <!-- @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"); -->
 
 html {
-/* margin: 20px 0; */
 font-family: 'Noto Sans TC', sans-serif;
+width: 100%;
+height: 100%;
 }
 body {
-background: rgb(213,206,166); /* Old browsers */
-<!-- background: -moz-linear-gradient(top, rgba(213,206,166,1) 0%, rgba(201,193,144,1) 40%, rgba(183,173,112,1) 100%); /*
-FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /*
-Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%); /* W3C,
-IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d5cea6', endColorstr='#b7ad70',GradientType=0 ); /*
-IE6-9 */ -->
-
+background-image: linear-gradient(to bottom, rgba(213,206,166,1) 0%,rgba(201,193,144,1) 40%,rgba(183,173,112,1) 100%);
+width: 100%;
+height: 100%;
 }
 <!-- 登入 -->
 .apple {
@@ -61,6 +55,13 @@ height: 30px;
 width: 200px;
 border: none;
 padding: 3px;
+outline-style: none ;
+}
+
+.enter input:focus{
+border-color: #66afe9;
+outline: 0;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
 
 .apple>button:hover{
@@ -68,6 +69,7 @@ background-color: <?= $thr_color ?>;
 color: white;
 cursor: pointer;
 }
+
 
 .loginBody {
 width: 300px;

@@ -35,11 +35,22 @@ padding: 14px 6px;
 text-decoration: none;
 font-size: 14px;
 }
+
+.header a:visited {
+    color: black;
+}
+
 .header i {
 float: left;
 font-size:20px;
+<!-- padding: 14px 6px; -->
+}
+.header span  {
+float: left;
+font-size:16px;
 padding: 14px 6px;
 }
+
 .header i:hover {
 cursor: pointer;
 color:<?= $two_color ?>;

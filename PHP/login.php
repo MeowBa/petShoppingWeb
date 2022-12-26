@@ -13,7 +13,7 @@
 
 <body>
 
-    <div class="loginBody">
+    <form class="loginBody">
         <!-- <span class="testHeader">登入</span> -->
         <div class="enter">
             <h2>登入</h2>
@@ -25,9 +25,9 @@
         <br>
         <div class="apple" >
             <button>登入</button>
-            <button>重設</button>
+            <button type="reset">重設</button>
             <button onclick="location.href='index.php'">回首頁</button>
         </div>
 
-    </div>
+    </form>
 </body>

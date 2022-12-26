@@ -1,6 +1,15 @@
+<?php
+
+if (isset($_COOKIE["userName"]))
+    $sUserName = $_COOKIE["userName"];
+else
+    $sUserName = "Guest";
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,27 +17,36 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.php">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
+
 </head>
+
 <body>
     <!-- 這裡是header -->
     <div class="header">
         <div class="logo-centered">
-            <a href="./home.html" class="active"> <img src="./img/LOGO.png" style="width: 150px; ;"> </a>
+            <a href="index.php" class="active"> <img src="./img/LOGO.png" style="width: 150px; ;"> </a>
         </div>
         <button class="openbtn" onclick="openNav()">&#9776; </button>
 
         <div class="header-right">
-            <!-- <a href="./car.html" target="_blank">購物車</a> -->
-            <i class="fa fa-shopping-cart fa-2x"></i>
-            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
-            <a href="./login.html" target="_blank">登入</a>
-            <!-- <a href="./login.html" target="_blank">登出</a> -->
+            <span> <?php echo "Welcome! " . $sUserName ?> </span>
+            <a href="">
+                <i class="fa fa-shopping-cart fa-2x"></i>
+            </a>
+            <a href="member.php">
+                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+            </a>
+
+            <?php if ($sUserName == "Guest"): ?>
+            <a href="login.php" target="_blank">登入</a>
+            <?php else: ?>
+            <a href="./login.html" target="_blank">登出</a>
+            <?php endif; ?>
         </div>
 
     </div>
-        <!-- 這裡是漢堡打開內容 -->
-        <div id="myMenu" class="menu">
+    <!-- 這裡是漢堡打開內容 -->
+    <div id="myMenu" class="menu">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="./food.html">貓狗飼料</a>
         <a href="#">貓狗罐頭</a>
@@ -41,7 +59,7 @@
         <a href="#">環境清潔</a>
         <a href="./hotel.html">住宿推薦</a>
     </div>
-        <!-- 這裡是icon列 -->
+    <!-- 這裡是icon列 -->
     <div id="icons">
         <a href="./food.html">
             <img src="icons/pet-food.png" alt="貓狗飼料">
@@ -345,7 +363,8 @@
     </div>
 
 
-    <script type="text/javascript" src="mycontent"></script> 
-    
+    <script type="text/javascript" src="mycontent"></script>
+
 </body>
+
 </html>
