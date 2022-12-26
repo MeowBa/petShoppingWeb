@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.php">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     
 </head>
 <body>
@@ -18,8 +19,11 @@
         <button class="openbtn" onclick="openNav()">&#9776; </button>
 
         <div class="header-right">
-            <a href="./car.html" target="_blank">購物車</a>
-            <a href="./login.html" target="_blank">登入|註冊</a>
+            <!-- <a href="./car.html" target="_blank">購物車</a> -->
+            <i class="fa fa-shopping-cart fa-2x"></i>
+            <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+            <a href="./login.html" target="_blank">登入</a>
+            <!-- <a href="./login.html" target="_blank">登出</a> -->
         </div>
 
     </div>
