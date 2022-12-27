@@ -40,7 +40,7 @@ else
             <?php if ($sUserName == "Guest"): ?>
             <a href="login.php" target="_blank">登入</a>
             <?php else: ?>
-            <a href="./login.html" target="_blank">登出</a>
+            <a href="login.php?logout=1" target="_blank">登出</a>
             <?php endif; ?>
         </div>
 

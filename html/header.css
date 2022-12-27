@@ -1,0 +1,158 @@
+html {
+    --maincolor: #fff389;
+    --twocolor: #A6372D;
+    --thrcolor: #4D5D73;
+    /* margin: 20px 0; */
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.header {
+    position: fixed;
+    background-color: var(--maincolor);
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.header a {
+    float: left;
+    color: var(--thrcolor);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.header a:hover {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+}
+
+body {
+    margin: 60px 0 0 0;
+}
+
+
+.logo-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+    .hearder a,
+    .hearder-right {
+        float: none;
+        display: block;
+    }
+}
+
+/* 這裡是MenuCss設定 */
+.menu {
+    height: 400px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 1;
+    background-color: var(--maincolor);
+    overflow-x: hidden;
+    padding-top: 10px;
+    transition: 0.5s;
+}
+
+.menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--twocolor);
+    display: block;
+    transition: 0.3s;
+}
+
+/* 經過menu裡面的字變色 */
+.menu a:hover {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF;
+}
+
+/*menu裡面字的設定 */
+.menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* menu三條線的設定 */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--maincolor);
+    color: var(--twocolor);
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 15px #FFFFFF, 0 0 20px #FFFFFF,
+        0 0 25px #FFFFFF;
+}
+
+.search input {
+    width: 250px;
+    border-radius: 30px;
+    border: 2px solid #324B4E;
+    background: #F9F0DA;
+    transition: .3s linear;
+    float: right;
+}
+
+.search input:focus {
+    width: 300px;
+}
+
+.search button {
+    background: none;
+    top: -2px;
+    right: 20px;
+    height: 42px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.search {
+    width: 500px;
+    height: 42px;
+    margin: 0 auto;
+    padding: 5px 0;
+
+}
+
+.search>form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding-left: 13px;
+}

@@ -23,7 +23,8 @@ margin-top: 50px;
 background-color: red !important;
 }
 
-.apple>button {
+.apple>button,
+.apple>input {
 width: 80px;
 background-color: white;
 font-size: 16px;
@@ -64,7 +65,8 @@ outline: 0;
 -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 }
 
-.apple>button:hover{
+.apple>button:hover,
+.apple>input:hover{
 background-color: <?= $thr_color ?>;
 color: white;
 cursor: pointer;
